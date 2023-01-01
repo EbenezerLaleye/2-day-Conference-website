@@ -7,15 +7,74 @@ body {
             'Main Main Main'
             'Footer Footer Footer'
         ;
+font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
 }
 nav {
     grid-area: Navigation;
 }
 header {
+    width: 100%;
+        height: 60vh;
+        background-image: url(/images/conference-hero.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
     grid-area: Header;
+place-items: center;
+}
+
+#header {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#header h1,
+h2 {
+
+    font-size: 2.3rem;
 }
 main {
     grid-area: Main;
+}
+#expectations {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#expectheader h3,
+ul {
+    margin: 15px 0 0 30px;
+}
+
+#expectheader h3 {
+    font-size: 2rem;
+}
+
+#expectheader {
+    height: 30vh;
+    background-color: #bdd5ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px #495867 dashed;
 }
 footer {
     grid-area: Footer;
