@@ -9,19 +9,28 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="/Homepage.html">Home</a></li>
+            <li><a href="/tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+    <header>
     <img src="/images/hero-symbol.jpeg" alt="">
     <h1>Advancing Technology</h1>
     <h2>1st Annual Budding Developers Conference</h2>
     <p>Orlando,FL - October 11,2022</p>
+</header>
+<section id="tickets">
     <h2>Tickets</h2>
     <form action="">
         <label for="fullname">Name</label>
-        <input type="text" name="fullname" required>
+        <input type="text" name="fullname" required id="formfullname">
         <label for="eaddress">Email</label>
-        <input type="email" name="eaddress" required>
+        <input type="email" name="eaddress" required id="formeaddress">
         <br>
         <br>
-        <select name="package" id="">
+        <select name="package" id="package">
             <option value="Standard">Standard - $149</option>
             <option value="Premium"> Premium - $249</option>
         </select>
@@ -33,8 +42,9 @@
         <label for="meals">Add on meals - $119</label>
         <br>
         <br>
-        <button>Submit</button>
+        <button id="submitbtn">Submit</button>
     </form>
+</section>
     <a href="/Homepage.html">Back to Home</a>
 </body>
 
