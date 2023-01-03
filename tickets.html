@@ -5,47 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styletickets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
     <title>Tickets Page </title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/Homepage.html">Home</a></li>
-            <li><a href="/tickets.html">Tickets</a></li>
-        </ul>
-    </nav>
-    <header>
-    <img src="/images/hero-symbol.jpeg" alt="">
-    <h1>Advancing Technology</h1>
-    <h2>1st Annual Budding Developers Conference</h2>
-    <p>Orlando,FL - October 11,2022</p>
-</header>
-<section id="tickets">
-    <h2>Tickets</h2>
-    <form action="">
-        <label for="fullname">Name</label>
-        <input type="text" name="fullname" required id="formfullname">
-        <label for="eaddress">Email</label>
-        <input type="email" name="eaddress" required id="formeaddress">
-        <br>
-        <br>
-        <select name="package" id="package">
-            <option value="Standard">Standard - $149</option>
-            <option value="Premium"> Premium - $249</option>
-        </select>
-        <h3>Package</h3>
-        <input type="checkbox" name="lodging" id="lodging">
-        <label for="lodging">Add on lodging - $99</label>
-        <br>
-        <input type="checkbox" name="meals" id="meals">
-        <label for="meals">Add on meals - $119</label>
-        <br>
-        <br>
-        <button id="submitbtn">Submit</button>
-    </form>
-</section>
-    <a href="/Homepage.html">Back to Home</a>
+    <div class="wrap">
+        <nav>
+            <ul>
+                <li><a href="/Homepage.html">Home</a></li>
+                <li><a href="/tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrap">
+        <header>
+            <img src="/images/hero-symbol.jpeg" alt="">
+            <h1>Advancing Technology</h1>
+            <h2>1st Annual Budding Developers Conference</h2>
+            <p>Orlando,FL - October 11,2022</p>
+        </header>
+    </div>
+    <div class="wrap">
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <form action="">
+                <label for="fullname">Name</label>
+                <input type="text" name="fullname" required id="formfullname">
+                <label for="eaddress">Email</label>
+                <input type="email" name="eaddress" required id="formeaddress">
+                <br>
+                <br>
+                <select name="package" id="package">
+                    <option value="Standard">Standard - $149</option>
+                    <option value="Premium"> Premium - $249</option>
+                </select>
+                <h3>Package</h3>
+                <input type="checkbox" name="lodging" id="lodging">
+                <label for="lodging">Add on lodging - $99</label>
+                <br>
+                <input type="checkbox" name="meals" id="meals">
+                <label for="meals">Add on meals - $119</label>
+                <br>
+                <br>
+                <button id="submitbtn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <div class="wrap">
+        <a href="/Homepage.html">Back to Home</a>
+    </div>
 </body>
 
 </html>
