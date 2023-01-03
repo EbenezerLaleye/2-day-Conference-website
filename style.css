@@ -77,13 +77,13 @@ main {
 
 }
 
-#expectheader h3,
-ul {
+#expectheader ul {
     margin: 15px 0 0 30px;
 }
 
 #expectheader h3 {
     font-size: 2rem;
+    margin: 15px 0 0 30px;
 }
 
 #expectheader {
