@@ -10,6 +10,11 @@ body {
     width: 100%;
 }
 
+.wrap:nth-of-type(3) {
+    display: grid;
+    place-items: center;
+}
+
 h1,
 h2,
 h3,
@@ -28,8 +33,10 @@ header {
 }
 
 header img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 60px;
+    border: 2px solid white;
 
 }
 
@@ -43,10 +50,30 @@ header h2 {
 }
 
 #tickets {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     text-align: center;
+    max-width: 700px;
+    padding: 20px 70px;
+    border: 0.5px solid lightgrey;
+    background-image: url(/images/swirl.png);
+
 
 }
 
 #tickets h2 {
     margin-bottom: 50px;
+}
+
+input[type=text],
+[type=email] {
+    width: 8rem;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.credintials {
+    display: none;
 }
