@@ -154,14 +154,21 @@ main {
     border-top: 1px #495867 dashed;
     border-bottom: 1px #495867 dashed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #packages table {
-    padding: 200px;
+    max-width: 1120px;
+    padding: 0px 50px 0px 50px;
+    border-spacing: 5px;
+
 
 }
+
+
 
 tbody th {
     color: #e9e9e9;
@@ -183,9 +190,18 @@ tbody th:nth-of-type(2) {
 }
 
 tbody td {
-    background-color: #e9e9e9;
+    background-color: white;
     text-align: center;
     padding: 20px;
+
+}
+
+tbody a {
+    text-decoration: none;
+    color: #e9e9e9;
+    background-color: #fe5f55;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
 }
 
 
@@ -194,22 +210,37 @@ tbody td {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 7rem;
+    margin-bottom: 25px;
 }
 
 .speakerblock {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
 
 }
 
 .speakercolumn {
     display: grid;
     grid-row: 2/3;
-    gap: 50px;
+    gap: 30px;
+    background-image: url(/images/swirl.png);
+    border: 0.5px solid lightgrey;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .speakerday {
     text-align: center;
+}
+
+.speakerimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.speakername {
+    font-weight: 700;
 }
 
 
@@ -221,7 +252,16 @@ footer {
     border-top: 1px #495867 dashed;
     border-bottom: 1px #495867 dashed;
     padding: 30px;
+    text-align: center;
 
+}
+
+footer a {
+    text-decoration: none;
+    color: #e9e9e9;
+    background-color: #fe5f55;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
 }
 
 footer h3 {
