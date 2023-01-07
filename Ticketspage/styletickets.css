@@ -111,8 +111,11 @@ header h2 {
 input[type=text],
 [type=email] {
     width: 8rem;
+    height: 20px;
     display: block;
     margin: 10px auto;
+    border: 2px solid #011228;
+    border-radius: 7px;
 
 }
 

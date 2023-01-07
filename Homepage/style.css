@@ -1,5 +1,7 @@
 body {
     width: 100%;
+    padding: 0;
+    margin: 0;
     display: grid;
     justify-items: center;
     grid-template-areas:
@@ -82,7 +84,7 @@ header {
 
 #header h1,
 h2 {
-    font-size: 2.3rem;
+    font-size: clamp(20px, 4vw, 50px);
 }
 
 main {
@@ -93,11 +95,14 @@ main {
 
 #expectations {
     width: 100%;
+
     background-image: url(/images/swirl.png);
+    /* background-color: aqua; */
 }
 
 #expectheader {
-    height: 30vh;
+    width: 100%;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +170,7 @@ main {
 }
 
 #packages {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,6 +230,7 @@ tbody a:active {
 
 #speakers {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 7rem;
     margin-bottom: 25px;
@@ -286,4 +292,55 @@ footer a:hover {
 
 footer h3 {
     font-size: 1.5rem;
+}
+
+@media(max-width:950px) {
+    .expectimg {
+        display: none;
+    }
+
+    #speakers {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 50%; */
+        padding: 0;
+        margin: 70px auto;
+        /* place-self: center; */
+
+    }
+
+    .speakercolumn:nth-of-type(1) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-content: center;
+        margin-bottom: 40px;
+
+    }
+
+    .speakercolumn:nth-of-type(2) {
+        grid-row: 3/4;
+        grid-column: 1/2;
+
+    }
+
+
+
+    #speakers h3 {
+        text-align: center;
+        grid-column: 1/2;
+    }
+
+    #expectheader ul {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1200px) {
+    .speakerimg {
+        display: none;
+    }
+
+    .speakerblock {
+        grid-template-columns: 1fr;
+    }
 }
